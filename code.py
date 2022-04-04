@@ -12,7 +12,9 @@ if __name__ == '__main__':
 
     print(f"Milliseconds per frame {ms_per_frame:.3f}")
     
-    one = number.FadeNumber(38, 35, color=(255,0,0), bright_step=0.01, max_brightness=0.65, min_brightness=0.05)
+#    one = number.FadeNumber(38, 35, color=(255,0,0), bright_step=0.01, max_brightness=0.65, min_brightness=0.05)
+    one = number.ChaseNumber(38, 35, color=(0,255,0), brightness=0.15)
+    one.clear()
 
     try:
         while True:
